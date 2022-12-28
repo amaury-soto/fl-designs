@@ -23,7 +23,8 @@ class _HomeBody extends StatelessWidget {
         children: [
           
           //Titles
-          PageTitle()
+          PageTitle(), 
+          CardTable()
 
 
 

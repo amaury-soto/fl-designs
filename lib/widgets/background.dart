@@ -18,7 +18,7 @@ class Background extends StatelessWidget {
           decoration: boxDecoration,
         ),
         Positioned(
-          top: -100,
+          top: -90,
           left: -30,
           child: _PinkBox())
       ],

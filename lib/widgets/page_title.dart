@@ -7,22 +7,29 @@ class PageTitle extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Container(
-        padding: EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+        padding: EdgeInsets.symmetric(horizontal: 10, vertical: 20),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
-              'Classify Transation',
-              style: TextStyle(
-                  color: Colors.white,
-                  fontWeight: FontWeight.bold,
-                  fontSize: 24),
+            Row(
+              //crossAxisAlignment: CrossAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+/*                 Text(
+                  'Find in',
+                  style: TextStyle(
+                      color:  Color.fromARGB(255, 120, 80, 174),
+                      fontWeight: FontWeight.bold,
+                      fontSize: 24),
+                ),  */
+                Image(image: AssetImage('assets/tada1.webp'), height: 100, width: 300,)
+              ],
             ),
-            SizedBox(height: 10),
-            Text(
-              'Classify this transaction into a particular category',
-              style: TextStyle(color: Colors.white, fontSize: 16),
-            ),
+           /*  SizedBox(height: 10), */
+           /*  Text(
+              'Everything you are looking for by category',
+              style: TextStyle(color:  Color.fromARGB(255, 120, 80, 174), fontSize: 16),
+            ), */
           ],
         ),
       ),
